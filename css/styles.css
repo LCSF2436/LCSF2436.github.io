@@ -1,0 +1,227 @@
+/*
+Author: Andy Deore
+Date: December 6, 2024
+File Name: Styles.css
+*/
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* General Image and Video Styles */
+img, video {
+    max-width: 100%;
+    display: block;
+}
+
+/* Header Section */
+header {
+    position: relative;
+    height: 500px;
+    background: url('../images/hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+header .logo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 10;
+}
+
+header .logo img {
+    max-width: 150px;
+}
+
+header nav {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background: #5ca85c;
+}
+
+/* Main Content Section */
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+main h2, main h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.125rem;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+main ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+main ul li {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.875rem;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #5ca85c;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Forms */
+form {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    width: auto;
+    background: #5ca85c;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background: #4b944b;
+}
+
+/* Responsive Design */
+/* Mobile View */
+@media screen and (max-width: 629px) {
+    header {
+        height: 300px;
+    }
+
+    header .logo img {
+        max-width: 100px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    footer p {
+        font-size: 0.75rem;
+    }
+}
+
+/* Tablet View */
+@media screen and (min-width: 630px) and (max-width: 1024px) {
+    header .logo img {
+        max-width: 120px;
+    }
+
+    header nav ul {
+        gap: 15px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Desktop View */
+@media screen and (min-width: 1025px) {
+    header .logo img {
+        max-width: 150px;
+    }
+
+    main {
+        padding: 30px;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
